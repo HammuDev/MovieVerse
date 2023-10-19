@@ -43,7 +43,7 @@ const Signup = () => {
           text: "OTP Sent",
           icon: "success",
           buttons: false,
-          timer: 300,
+          timer: 3000,
         });
         setOtpSent(true);
         setLoading(false);
@@ -126,6 +126,7 @@ const Signup = () => {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                required
               />
             </div>
           </div>
@@ -138,6 +139,7 @@ const Signup = () => {
                 type="number"
                 id="name"
                 name="name"
+                required
                 value={form.mobile}
                 onChange={(e) => setForm({ ...form, mobile: e.target.value })}
                 class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -154,6 +156,7 @@ const Signup = () => {
                 type="password"
                 id="name"
                 name="name"
+                required
                 value={form.password}
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
                 class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
